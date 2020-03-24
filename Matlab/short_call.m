@@ -1,0 +1,40 @@
+x=5:15;
+y=0*x;
+subplot(2,2,1)
+plot(x,y,'k-','linewidth',2)
+hold on
+s1=.75-max(x-10,0)
+plot(x,s1,'r-','linewidth',2)
+text(10,-.5,'k')
+text(10,0,'|')
+xlabel('stock price (S_T)')
+ylabel('payoff')
+subplot(2,2,2)
+plot(x,y,'k-','linewidth',2)
+hold on
+s1=.75-max(10-x,0)
+plot(x,s1,'r-','linewidth',2)
+text(10,-.5,'k')
+text(10,0,'|')
+xlabel('stock price (S_T)')
+ylabel('payoff')
+subplot(2,2,3)
+plot(x,y,'k-','linewidth',2)
+hold on
+s1=-.75+max(x-10,0)
+plot(x,s1,'r-','linewidth',2)
+text(10,.5,'k')
+text(10,0,'|')
+xlabel('stock price (S_T)')
+ylabel('payoff')
+subplot(2,2,4)
+plot(x,y,'k-','linewidth',2)
+hold on
+s1=-.75+max(10-x,0)
+plot(x,s1,'r-','linewidth',2)
+
+axis([5 15  -5  5])
+text(10,.5,'k')
+text(10,0,'|')
+xlabel('stock price (S_T)')
+ylabel('payoff')
